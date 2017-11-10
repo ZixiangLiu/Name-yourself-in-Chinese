@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hm6-lK-dgs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Silly Animation-->
+        <scene sceneID="OLz-Iq-JIV">
+            <objects>
+                <viewController id="kaQ-ne-EMD" customClass="AnimationViewController" customModule="project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjJ-R6-tPz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-cA-BVx">
+                                <rect key="frame" x="156" y="314" width="62" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Boom!"/>
+                                <connections>
+                                    <action selector="makeItHappen:" destination="kaQ-ne-EMD" eventType="touchUpInside" id="nht-EE-lC3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tSZ-cA-BVx" firstAttribute="centerY" secondItem="HjJ-R6-tPz" secondAttribute="centerY" id="3vE-hs-7Ai"/>
+                            <constraint firstItem="tSZ-cA-BVx" firstAttribute="centerX" secondItem="HjJ-R6-tPz" secondAttribute="centerX" id="sCC-cU-NIQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="STT-MD-013"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Silly Animation" image="android" id="WsY-Lv-D3s"/>
+                    <connections>
+                        <outlet property="button" destination="tSZ-cA-BVx" id="fow-h2-Bm8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQJ-rv-rgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="936"/>
+        </scene>
+        <!--Click this!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project1" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,6 +199,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Click this!" image="apple" id="19w-UZ-KWf"/>
                     <connections>
                         <outlet property="BiHua" destination="Mfo-Db-Dgf" id="bFX-wL-oLd"/>
                         <outlet property="FirstName" destination="cZR-TN-dK0" id="eml-yT-rwc"/>
@@ -181,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="qbM-Jb-76K">
@@ -241,7 +275,29 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gU2-LM-aW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="119"/>
+            <point key="canvasLocation" x="1308" y="118.29085457271366"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HbT-pM-Ru6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hm6-lK-dgs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EJH-SE-Lc0">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pWx-Ca-DfO"/>
+                        <segue destination="kaQ-ne-EMD" kind="relationship" relationship="viewControllers" id="ALv-5F-gZ8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6O-Ss-fqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="android" width="30" height="30"/>
+        <image name="apple" width="30" height="30"/>
+    </resources>
 </document>

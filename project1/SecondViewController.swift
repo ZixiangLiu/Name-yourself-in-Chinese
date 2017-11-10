@@ -70,10 +70,10 @@ class SecondViewController: UITableViewController{
         }
     }
     
-    @IBAction func addName(_ sender: AnyObject) {
+    /*@IBAction func addName(_ sender: AnyObject) {
         if let index = model.addName() {
             let indexPath = NSIndexPath(row: index)
             tableView.insertRows(at: [indexPath as IndexPath], with: .automatic)
         }
-    }
+    }*/
 }

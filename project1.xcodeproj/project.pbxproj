@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0988864D1FB59B7200FE03DD /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988864C1FB59B7200FE03DD /* NameCell.swift */; };
 		68757E831FB63BF5004EB9E1 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68757E821FB63BF5004EB9E1 /* Name.swift */; };
+		68757E851FB65538004EB9E1 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68757E841FB65538004EB9E1 /* AnimationViewController.swift */; };
 		FA4A30FC1FB0E74D00EBE399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A30FB1FB0E74D00EBE399 /* AppDelegate.swift */; };
 		FA4A30FE1FB0E74D00EBE399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A30FD1FB0E74D00EBE399 /* ViewController.swift */; };
 		FA4A31011FB0E74D00EBE399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A30FF1FB0E74D00EBE399 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		0988864C1FB59B7200FE03DD /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
 		68757E821FB63BF5004EB9E1 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		68757E841FB65538004EB9E1 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		FA4A30F81FB0E74D00EBE399 /* project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4A30FB1FB0E74D00EBE399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA4A30FD1FB0E74D00EBE399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				FA4A30FB1FB0E74D00EBE399 /* AppDelegate.swift */,
 				FA4A30FD1FB0E74D00EBE399 /* ViewController.swift */,
 				FA4A30FF1FB0E74D00EBE399 /* Main.storyboard */,
+				68757E841FB65538004EB9E1 /* AnimationViewController.swift */,
 				0988864C1FB59B7200FE03DD /* NameCell.swift */,
 				68757E821FB63BF5004EB9E1 /* Name.swift */,
 				FA4A312D1FB0EDE500EBE399 /* FirstName.swift */,
@@ -281,6 +284,7 @@
 				FA4A31321FB104B100EBE399 /* SecondViewController.swift in Sources */,
 				68757E831FB63BF5004EB9E1 /* Name.swift in Sources */,
 				FA4A312C1FB0EC7100EBE399 /* Model.swift in Sources */,
+				68757E851FB65538004EB9E1 /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
