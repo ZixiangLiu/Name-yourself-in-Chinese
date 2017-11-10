@@ -6,4 +6,14 @@
 //  Copyright © 2017 chen, junyang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class NameCell: UITableViewCell {
+    @IBOutlet var title: UILabel!
+    
+    func updateLabels() {
+        let bodyFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        title.font = bodyFont
+    }
+}
+

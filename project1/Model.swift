@@ -19,6 +19,9 @@ class Model{
     var outputLastName: String = ""
     var outputFirstNames: [String] = []
     
+    // list of names used to display
+    var names : [String] = []
+    
     init(Lastname: String, Firstname: String, Bihua: Int, Sex: Int, Yijing: Int){
         self.Lastname = Lastname
         self.Firstname = Firstname
@@ -28,14 +31,14 @@ class Model{
     }
     
     func test(){
-        let F1 = FirstName(Word: "12m0", BihHua: 12, Sex: 1, YiJing: 0)
-        let F2 = FirstName(Word: "6m0", BihHua: 6, Sex: 1, YiJing: 0)
-        let F3 = FirstName(Word: "12f0", BihHua: 12, Sex: 2, YiJing: 0)
-        let F4 = FirstName(Word: "6f0", BihHua: 6, Sex: 2, YiJing: 0)
-        let F5 = FirstName(Word: "12n0", BihHua: 12, Sex: 0, YiJing: 0)
-        let F6 = FirstName(Word: "6n0", BihHua: 6, Sex: 0, YiJing: 0)
-        let F7 = FirstName(Word: "12n1", BihHua: 12, Sex: 0, YiJing: 1)
-        let F8 = FirstName(Word: "12n2", BihHua: 12, Sex: 0, YiJing: 2)
+        let F1 = FirstName(Word: "张", BihHua: 12, Sex: 1, YiJing: 0)
+        let F2 = FirstName(Word: "王", BihHua: 6, Sex: 1, YiJing: 0)
+        let F3 = FirstName(Word: "李", BihHua: 12, Sex: 2, YiJing: 0)
+        let F4 = FirstName(Word: "赵", BihHua: 6, Sex: 2, YiJing: 0)
+        let F5 = FirstName(Word: "陈", BihHua: 12, Sex: 0, YiJing: 0)
+        let F6 = FirstName(Word: "刘", BihHua: 6, Sex: 0, YiJing: 0)
+        let F7 = FirstName(Word: "杨", BihHua: 12, Sex: 0, YiJing: 1)
+        let F8 = FirstName(Word: "操", BihHua: 12, Sex: 0, YiJing: 2)
         Firstnames.append(F1)
         Firstnames.append(F2)
         Firstnames.append(F3)
@@ -76,6 +79,18 @@ class Model{
                 }
                 outputFirstNames = output
             }
+        }
+    }
+    
+    func displayedName(){
+        for i in outputFirstNames{
+            names.append("\(outputLastName)\(i)")
+        }
+    }
+    
+    func removeName(_ Name:String){
+        if let index = names.index(of: Name){
+            
         }
     }
 }
