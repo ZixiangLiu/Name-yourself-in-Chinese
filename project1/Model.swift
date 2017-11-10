@@ -20,7 +20,7 @@ class Model{
     var outputFirstNames: [String] = []
     
     // list of names used to display
-    var names : [String] = []
+    var names : [Name] = []
     
     init(Lastname: String, Firstname: String, Bihua: Int, Sex: Int, Yijing: Int){
         self.Lastname = Lastname
@@ -82,15 +82,25 @@ class Model{
         }
     }
     
-    func displayedName(){
+    func addName() -> Int{
         for i in outputFirstNames{
-            names.append("\(outputLastName)\(i)")
+            // names.append("\(outputLastName)\(i)")
+            names.append(Name(i, outputLastName))
+        }
+        return names.count
+    }
+    
+    func removeName(_ name:Name){
+        if let index = names.index(of: name){
+            names.remove(at: index)
         }
     }
     
-    func removeName(_ Name:String){
-        if let index = names.index(of: Name){
-            
+    func moveCourse(_ fromIndex: Int, _ toIndex: Int) {
+        if fromIndex != toIndex {
+            let name = names[fromIndex]
+            names.remove(at: fromIndex)
+            names.insert(name, at: toIndex)
         }
     }
 }

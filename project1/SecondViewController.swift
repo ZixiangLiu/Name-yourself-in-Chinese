@@ -53,8 +53,27 @@ class SecondViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! NameCell
         cell.updateLabels()
-        cell.title.text = model.names[indexPath.row]
+        cell.title.text = model.names[indexPath.row].firstName
+        cell.detail.text = model.names[indexPath.row].lastName
         
         return cell
+    }
+    
+    @IBAction func toggleEditMode(_ sender: UIButton) {
+        if isEditing == false {
+            setEditing(true, animated: true)
+            sender.setTitle("Done", for: .normal)
+        }
+        else {
+            setEditing(false, animated: true)
+            sender.setTitle("Edit", for: .normal)
+        }
+    }
+    
+    @IBAction func addName(_ sender: AnyObject) {
+        if let index = model.addName() {
+            let indexPath = NSIndexPath(row: index)
+            tableView.insertRows(at: [indexPath as IndexPath], with: .automatic)
+        }
     }
 }

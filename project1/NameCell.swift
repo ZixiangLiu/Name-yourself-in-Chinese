@@ -10,10 +10,14 @@ import UIKit
 
 class NameCell: UITableViewCell {
     @IBOutlet var title: UILabel!
+    @IBOutlet var detail: UILabel!
     
     func updateLabels() {
         let bodyFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         title.font = bodyFont
+        
+        let caption1Font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.caption1)
+        detail.font = caption1Font
     }
 }
 
