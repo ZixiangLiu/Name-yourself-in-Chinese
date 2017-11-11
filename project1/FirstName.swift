@@ -12,12 +12,13 @@ class FirstName{
     var Word: String
     var BiHua: Int
     var Sex: Int //0: neutral, 1: male, 2: female
-    var YiJing: Int
-    let Yijings : [String] = ["Y1","Y2","Y3"]
+    var YiJing: Int //0: easy, 1: normal, 2: hard
+    let Yijings : [String] = ["trivial","Modish","Quaint"]
+    var meaning : String = ""
     
-    init(Word: String, BihHua: Int, Sex: Int, YiJing: Int){
+    init(Word: String, Bihua: Int, Sex: Int, YiJing: Int){
         self.Word = Word
-        self.BiHua = BihHua
+        self.BiHua = Bihua
         self.Sex = Sex
         self.YiJing = YiJing
     }
