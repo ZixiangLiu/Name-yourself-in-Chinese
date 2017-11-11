@@ -19,15 +19,15 @@ class Model{
     var outputLastName: String = ""
     var outputFirstNames: [String] = []
     
+    var Names : [String] = []
+    var allNames : [String] = []
+    
     init(Lastname: String, Firstname: String, Bihua: Int, Sex: Int, Yijing: Int){
         self.Lastname = Lastname
         self.Firstname = Firstname
         self.Bihua = Bihua
         self.Sex = Sex
         self.Yijing = Yijing
-    }
-    
-    func test(){
         Firstnames.append(FirstName(Word: "昱丁", Bihua: 2, Sex: 1, YiJing: 2))
         Firstnames.append(FirstName(Word: "甲欣", Bihua: 0, Sex: 0, YiJing: 1))
         Firstnames.append(FirstName(Word: "驿枚", Bihua: 2, Sex: 1, YiJing: 3))
@@ -299,5 +299,24 @@ class Model{
                 outputFirstNames = output
             }
         }
+    }
+
+    func doStuff(){
+        self.generateLastName()
+        self.generateFirstName()
+        for i in self.outputFirstNames{
+            self.Names.append("\(self.outputLastName)\(i)")
+            self.allNames.append("\(self.outputLastName)\(i)")
+        }
+    }
+    
+    func deleteName(_ index: Int) -> String{
+        let name = Names[index]
+        Names.remove(at: index)
+        return name
+    }
+    
+    func getNumberRow() -> Int{
+        return self.Names.count
     }
 }

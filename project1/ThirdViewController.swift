@@ -66,7 +66,8 @@ class ThirdViewController: UIViewController {
         self.topLeftY.constant += height
         
         let topLeftClosure = { () -> Void in
-            self.topLeft.text = "Here I go!"
+            let topLeftText = NSLocalizedString("Here I go!", comment: "top left button name")
+            self.topLeft.text = topLeftText
             self.view.layoutIfNeeded()
         }
         
@@ -87,7 +88,8 @@ class ThirdViewController: UIViewController {
         self.topLeftY.constant -= height
         
         UIView.animate(withDuration: 2, animations: { () -> Void in
-            self.topLeft.text = "I'm back!"
+            let topLeftText = NSLocalizedString("I am back!", comment: "top left button name (return)")
+            self.topLeft.text = topLeftText
             self.view.layoutIfNeeded()
         })
     }

@@ -9,21 +9,12 @@
 import UIKit
 class SecondViewController: UITableViewController{
     
-    var label1: UILabel!
-    var label2: UILabel!
-    var label3: UILabel!
-    var label4: UILabel!
-    var label5: UILabel!
-    
-    var Names : [String] = []
+    var model : Model!
+    var transferObj : TransferObj = TransferObj()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        Names.append(label1.text!)
-        Names.append(label2.text!)
-        Names.append(label3.text!)
-        Names.append(label4.text!)
-        Names.append(label5.text!)
+        self.model = transferObj.model!
     }
     
     override func viewDidLoad() {
@@ -42,47 +33,47 @@ class SecondViewController: UITableViewController{
     @IBAction func toggleEditMode(_ sender: UIButton) {
         if isEditing == false {
             setEditing(true, animated: true)
-            sender.setTitle("Done", for: .normal)
+            let done = NSLocalizedString("Done", comment: "Done message")
+            sender.setTitle(done, for: .normal)
         }
         else {
             setEditing(false, animated: true)
-            sender.setTitle("Edit", for: .normal)
+            let edit = NSLocalizedString("Edit", comment: "Edit message")
+            sender.setTitle(edit, for: .normal)
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Names.count
+        return model.getNumberRow()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! NameCell
-        cell.title.text = Names[indexPath.row]
+        cell.title.text = model.Names[indexPath.row]
         return cell
     }
     
     func deleteRow(_ path: IndexPath) {
-        let name = Names[path.row]
-        print(name)
-        print(Names)
-        Names.remove(at: path.row)
-        print(path.row)
-        print(Names)
-        verifyDelete(name, {
-        (action) -> Void in
-            self.tableView.deleteRows(at: [path], with: .automatic)
-        })
+        verifyDelete(   model.deleteName(path.row),
+                        {
+                            (action) -> Void in
+                            self.tableView.deleteRows(at: [path], with: .automatic)
+                        }
+        )
     }
 
     func verifyDelete(_ name: String, _ delete: @escaping (UIAlertAction) -> Void) {
-        let title = "Delete \(name)?"
-        let message = "Are you sure you don't like this name?"
+        let title = "\(name)"
+        let message = NSLocalizedString("Are you sure you don't like this name?", comment: "Warning message")
         
         let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancel = NSLocalizedString("Cancel", comment: "Cancel message")
+        let cancelAction = UIAlertAction(title: cancel, style: .cancel, handler: nil)
         ac.addAction(cancelAction)
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: delete)
+        let delete_message = NSLocalizedString("Delete", comment: "Delete message")
+        let deleteAction = UIAlertAction(title: delete_message, style: .destructive, handler: delete)
         ac.addAction(deleteAction)
         
         present(ac, animated: true, completion: nil)

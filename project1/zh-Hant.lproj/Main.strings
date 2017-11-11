@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "Meaning"; ObjectID = "43G-1m-ePH"; */
+"43G-1m-ePH.text" = "意境";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5MS-Qt-twR"; */
+"5MS-Qt-twR.text" = "標籤";
+
+/* Class = "UILabel"; text = "Enlarge"; ObjectID = "5yN-sy-Xye"; */
+"5yN-sy-Xye.text" = "放大";
+
+/* Class = "UILabel"; text = "Drop Off"; ObjectID = "6aG-ZA-vRf"; */
+"6aG-ZA-vRf.text" = "下降";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "7QA-79-7b1"; */
+"7QA-79-7b1.normalTitle" = "編輯";
+
+/* Class = "UITabBarItem"; title = "Animation"; ObjectID = "8TV-5u-9sr"; */
+"8TV-5u-9sr.title" = "動畫";
+
+/* Class = "UISegmentedControl"; 9aQ-6c-ii6.segmentTitles[0] = "Male"; ObjectID = "9aQ-6c-ii6"; */
+"9aQ-6c-ii6.segmentTitles[0]" = "男";
+
+/* Class = "UISegmentedControl"; 9aQ-6c-ii6.segmentTitles[1] = "Female"; ObjectID = "9aQ-6c-ii6"; */
+"9aQ-6c-ii6.segmentTitles[1]" = "女";
+
+/* Class = "UIButton"; normalTitle = "Generate"; ObjectID = "CBX-fg-UOw"; */
+"CBX-fg-UOw.normalTitle" = "生成名字";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dyc-Dk-MxR"; */
+"Dyc-Dk-MxR.text" = "標籤";
+
+/* Class = "UILabel"; text = "Change Color"; ObjectID = "Emp-Q0-60f"; */
+"Emp-Q0-60f.text" = "換顏色";
+
+/* Class = "UITabBarItem"; title = "Main App"; ObjectID = "Iyt-TV-GIg"; */
+"Iyt-TV-GIg.title" = "主程序";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jqs-8L-8sR"; */
+"Jqs-8L-8sR.text" = "標籤";
+
+/* Class = "UILabel"; text = "Last name"; ObjectID = "KNj-7p-9Mr"; */
+"KNj-7p-9Mr.text" = "姓";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Qpl-ba-ANT"; */
+"Qpl-ba-ANT.text" = "標籤";
+
+/* Class = "UILabel"; text = "Fade"; ObjectID = "T80-Kk-mbM"; */
+"T80-Kk-mbM.text" = "淡出";
+
+/* Class = "UIButton"; normalTitle = "Silly Animation"; ObjectID = "U9G-S5-EYo"; */
+"U9G-S5-EYo.normalTitle" = "傻逼動畫";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XxW-DN-WeG"; */
+"XxW-DN-WeG.text" = "標籤";
+
+/* Class = "UISegmentedControl"; Yr0-8L-S57.segmentTitles[0] = "easy"; ObjectID = "Yr0-8L-S57"; */
+"Yr0-8L-S57.segmentTitles[0]" = "簡單";
+
+/* Class = "UISegmentedControl"; Yr0-8L-S57.segmentTitles[1] = "normal"; ObjectID = "Yr0-8L-S57"; */
+"Yr0-8L-S57.segmentTitles[1]" = "正常";
+
+/* Class = "UISegmentedControl"; Yr0-8L-S57.segmentTitles[2] = "hard"; ObjectID = "Yr0-8L-S57"; */
+"Yr0-8L-S57.segmentTitles[2]" = "難";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hXZ-BM-jCQ"; */
+"hXZ-BM-jCQ.text" = "標籤";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "hZL-HB-9aB"; */
+"hZL-HB-9aB.text" = "性別";
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "r9u-dg-vCO"; */
+"r9u-dg-vCO.text" = "名";
+
+/* Class = "UISegmentedControl"; vKM-bj-ohq.segmentTitles[0] = "trivial"; ObjectID = "vKM-bj-ohq"; */
+"vKM-bj-ohq.segmentTitles[0]" = "易懂的";
+
+/* Class = "UISegmentedControl"; vKM-bj-ohq.segmentTitles[1] = "Modish"; ObjectID = "vKM-bj-ohq"; */
+"vKM-bj-ohq.segmentTitles[1]" = "流行的";
+
+/* Class = "UISegmentedControl"; vKM-bj-ohq.segmentTitles[2] = "Quaint"; ObjectID = "vKM-bj-ohq"; */
+"vKM-bj-ohq.segmentTitles[2]" = "古雅的";
+
+/* Class = "UILabel"; text = "Writable"; ObjectID = "wqi-04-Jr1"; */
+"wqi-04-Jr1.text" = "易寫度";
