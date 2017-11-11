@@ -61,7 +61,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBX-fg-UOw">
-                                <rect key="frame" x="124.5" y="471.5" width="71" height="33"/>
+                                <rect key="frame" x="124.5" y="451.5" width="71" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Generate"/>
                                 <connections>
@@ -115,7 +115,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cZR-TN-dK0" secondAttribute="trailing" constant="20" id="ZSi-HH-CQL"/>
                             <constraint firstItem="hZL-HB-9aB" firstAttribute="top" secondItem="wqi-04-Jr1" secondAttribute="bottom" constant="50" id="fa5-K5-n4K"/>
                             <constraint firstItem="9aQ-6c-ii6" firstAttribute="leading" secondItem="hZL-HB-9aB" secondAttribute="trailing" constant="42" id="gXv-Zs-Xok" userLabel="Sex.leading = Sex.trailing + 57"/>
-                            <constraint firstItem="CBX-fg-UOw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2" constant="-80" id="gm5-YF-g2E"/>
+                            <constraint firstItem="CBX-fg-UOw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2" constant="-100" id="gm5-YF-g2E"/>
                             <constraint firstItem="vKM-bj-ohq" firstAttribute="leading" secondItem="43G-1m-ePH" secondAttribute="trailing" constant="35" id="hga-J6-Hr6"/>
                             <constraint firstItem="wqi-04-Jr1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="k9B-fp-VKd"/>
                             <constraint firstItem="CBX-fg-UOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kSu-Rs-xdw"/>
