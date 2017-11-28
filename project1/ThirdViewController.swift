@@ -61,8 +61,8 @@ class ThirdViewController: UIViewController {
     //   of the screen
     func animateTopLeftBegin() {
         let height = view.frame.height
-        print(height)
-        print(self.topLeftY.constant)
+//        print(height)
+//        print(self.topLeftY.constant)
         self.topLeftY.constant += height
         
         let topLeftClosure = { () -> Void in

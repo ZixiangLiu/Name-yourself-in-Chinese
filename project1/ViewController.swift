@@ -42,7 +42,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func submit(){
-        print("\nFunny\n\(LastName.text!)\nworking!")
         let model = Model(Lastname: LastName.text!, Firstname: FirstName.text!, Bihua: Int(BiHua.selectedSegmentIndex), Sex: Sex.selectedSegmentIndex, Yijing: YiJing.selectedSegmentIndex)
         self.model = model
         model.doStuff()

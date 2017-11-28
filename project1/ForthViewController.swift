@@ -16,8 +16,15 @@ class ForthViewController: UIViewController{
     @IBOutlet var address : UITextField!
     @IBOutlet var generate : UIButton!
     var transferObj : TransferObj = TransferObj()
+    var model : Model!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.model = transferObj.model!
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.transferObj.model = self.model
         if segue.identifier == "generateBusinessCard" {
             let destination = segue.destination as! FifthViewController
             destination.Company = company
@@ -25,6 +32,7 @@ class ForthViewController: UIViewController{
             destination.Phone = phone
             destination.Email = email
             destination.Address = address
+            destination.transferObj = self.transferObj
         }
     }
 
