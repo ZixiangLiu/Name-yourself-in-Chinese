@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Generate"/>
                                 <connections>
-                                    <action selector="submit" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVM-ub-5Fe"/>
+                                    <action selector="submit" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVM-XA-3X5"/>
                                     <segue destination="m65-0F-i5V" kind="show" identifier="send_label" id="bQT-Ov-Kpu"/>
                                 </connections>
                             </button>
@@ -134,11 +134,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="5wD-gS-rFk"/>
                     <connections>
-                        <outlet property="BiHua" destination="Yr0-8L-S57" id="REt-oi-MMu"/>
-                        <outlet property="FirstName" destination="cZR-TN-dK0" id="eml-yT-rwc"/>
-                        <outlet property="LastName" destination="Ank-MW-1gr" id="pHm-Ax-z44"/>
-                        <outlet property="Sex" destination="9aQ-6c-ii6" id="ffk-no-kzc"/>
-                        <outlet property="YiJing" destination="vKM-bj-ohq" id="WA8-Xs-tbq"/>
+                        <outlet property="BiHua" destination="Yr0-8L-S57" id="wdm-HQ-K6u"/>
+                        <outlet property="FirstName" destination="cZR-TN-dK0" id="GWf-b5-XUI"/>
+                        <outlet property="LastName" destination="Ank-MW-1gr" id="s7K-vw-7wW"/>
+                        <outlet property="Sex" destination="9aQ-6c-ii6" id="6gJ-bb-a5Y"/>
+                        <outlet property="YiJing" destination="vKM-bj-ohq" id="38K-vH-JVI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -102,7 +102,7 @@ class SecondViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.model.selected = indexPath.row
-        bottomPronunciation.text = self.model.outputFirstNames[self.model.selected].pronunciation
+        bottomPronunciation.text = "\(self.model.outputLastName.pronunciation) \(self.model.outputFirstNames[self.model.selected].pronunciation)"
         bottomMeaning.text = self.model.outputFirstNames[self.model.selected].meaning
         bottomName.text = self.model.Names[self.model.selected]
     }

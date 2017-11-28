@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090117D11FB690F100A71235 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090117D01FB690F100A71235 /* NameCell.swift */; };
+		092C4C801FCCFDF00026F232 /* LastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C4C7F1FCCFDF00026F232 /* LastName.swift */; };
 		09E1B0091FB6AA04002E5188 /* TransferObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1B0081FB6AA04002E5188 /* TransferObj.swift */; };
 		68A9F4E21FB67B650070F534 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A9F4E11FB67B650070F534 /* ThirdViewController.swift */; };
 		68E809AC1FCB83A4005DD62B /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E809AB1FCB83A4005DD62B /* ForthViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		090117D01FB690F100A71235 /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		092C4C7F1FCCFDF00026F232 /* LastName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastName.swift; sourceTree = "<group>"; };
 		09E1B0081FB6AA04002E5188 /* TransferObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferObj.swift; sourceTree = "<group>"; };
 		68A9F4E11FB67B650070F534 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		68E809AB1FCB83A4005DD62B /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
@@ -119,15 +121,16 @@
 		FA4A30FA1FB0E74D00EBE399 /* project1 */ = {
 			isa = PBXGroup;
 			children = (
-				68E809AD1FCB99DE005DD62B /* FifthViewController.swift */,
 				FA4A30FB1FB0E74D00EBE399 /* AppDelegate.swift */,
 				FA4A30FD1FB0E74D00EBE399 /* ViewController.swift */,
+				FA4A31311FB104B100EBE399 /* SecondViewController.swift */,
+				68A9F4E11FB67B650070F534 /* ThirdViewController.swift */,
 				68E809AB1FCB83A4005DD62B /* ForthViewController.swift */,
+				68E809AD1FCB99DE005DD62B /* FifthViewController.swift */,
 				09E1B0081FB6AA04002E5188 /* TransferObj.swift */,
 				FA4A30FF1FB0E74D00EBE399 /* Main.storyboard */,
-				68A9F4E11FB67B650070F534 /* ThirdViewController.swift */,
 				FA4A312D1FB0EDE500EBE399 /* FirstName.swift */,
-				FA4A31311FB104B100EBE399 /* SecondViewController.swift */,
+				092C4C7F1FCCFDF00026F232 /* LastName.swift */,
 				090117D01FB690F100A71235 /* NameCell.swift */,
 				FA4A312B1FB0EC7100EBE399 /* Model.swift */,
 				FA4A31021FB0E74D00EBE399 /* Assets.xcassets */,
@@ -301,6 +304,7 @@
 				68E809AC1FCB83A4005DD62B /* ForthViewController.swift in Sources */,
 				68A9F4E21FB67B650070F534 /* ThirdViewController.swift in Sources */,
 				FA4A312C1FB0EC7100EBE399 /* Model.swift in Sources */,
+				092C4C801FCCFDF00026F232 /* LastName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
