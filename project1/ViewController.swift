@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet var BiHua : UISegmentedControl!
     @IBOutlet var Sex : UISegmentedControl!
     @IBOutlet var YiJing : UISegmentedControl!
-    var model : Model!
+    var model : Model?
     var transferObj : TransferObj = TransferObj()
     
     override func viewDidLoad() {
@@ -23,7 +23,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         LastName.autocorrectionType = .no
         FirstName.autocorrectionType = .no
-
+        if let temp = model{
+            LastName.text = temp.Lastname
+            FirstName.text = temp.Firstname
+            BiHua.selectedSegmentIndex = temp.Bihua
+            Sex.selectedSegmentIndex = temp.Sex
+            YiJing.selectedSegmentIndex = temp.Yijing
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -44,6 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBAction func submit(){
         let model = Model(Lastname: LastName.text!, Firstname: FirstName.text!, Bihua: Int(BiHua.selectedSegmentIndex), Sex: Sex.selectedSegmentIndex, Yijing: YiJing.selectedSegmentIndex)
         self.model = model
+        _ = ModelPerister.setModel(model)
         model.doStuff()
         self.transferObj.model = self.model
     }

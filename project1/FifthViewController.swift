@@ -32,6 +32,9 @@ class FifthViewController: UIViewController{
     @IBOutlet var address2 : UILabel!
     @IBOutlet var chineseName2 : UILabel!
     @IBOutlet var englishName2 : UILabel!
+    @IBOutlet weak var english: UIView!
+    @IBOutlet weak var chinese: UIView!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.model = transferObj.model!
@@ -51,5 +54,17 @@ class FifthViewController: UIViewController{
         address2.text = Address.text!
         chineseName2.text = self.model.Names[self.model.selected]
         englishName2.text = self.model.Firstname + " " + self.model.Lastname
+    }
+    
+    @IBAction func saveImage(){
+        save(english)
+        save(chinese)
+    }
+    
+    func save(_ version: UIView){
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: version.frame.width, height: version.frame.height), false, 0);
+        self.view.drawHierarchy(in: CGRect(x: -version.frame.origin.x, y: -version.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height), afterScreenUpdates: true)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!;
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     }
 }

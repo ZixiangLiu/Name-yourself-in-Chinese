@@ -8,19 +8,44 @@
 
 import Foundation
 
-class Model{
-    var Lastname: String = ""
-    var Firstname: String = ""
+class Model: NSObject, NSCoding{
+    var Lastname: String
+    var Firstname: String
     var Bihua: Int
     var Sex: Int //0:male, 1: female
     var Yijing: Int //index of [YiJing]
     var Firstnames: [FirstName] = []
     var outputLastName: LastName!
     var outputFirstNames: [FirstName] = []
+    //var UniqueID: String
     
     var Names : [String] = []
     var allNames : [String] = []
     var selected : Int!
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(Lastname, forKey: "Lastname")
+        aCoder.encode(Firstname, forKey: "Firstname")
+        aCoder.encode(Bihua, forKey: "Bihua")
+        aCoder.encode(Sex, forKey: "Sex")
+        aCoder.encode(Yijing, forKey: "Yijing")
+        //aCoder.encode(Firstnames, forKey: "Firstnames")
+        //aCoder.encode(outputLastName, forKey: "outputLastName")
+        //aCoder.encode(outputFirstNames, forKey: "outputFirstNames")
+        //aCoder.encode(UniqueID, forKey: "UniqueID")
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        Lastname = aDecoder.decodeObject(forKey: "Lastname") as! String
+        Firstname = aDecoder.decodeObject(forKey: "Firstname") as! String
+        Bihua = aDecoder.decodeInteger(forKey: "Bihua")
+        Sex = aDecoder.decodeInteger(forKey: "Sex")
+        Yijing = aDecoder.decodeInteger(forKey: "Yijing")
+        //Firstnames = aDecoder.decodeObject(forKey: "Firstnames") as! [FirstName]
+        //outputLastName = aDecoder.decodeObject(forKey: "outputLastName") as! LastName
+        //outputFirstNames = aDecoder.decodeObject(forKey: "outputFirstNames") as! [FirstName]
+        //UniqueID = aDecoder.decodeObject(forKey: "UniqueID") as! String
+    }
     
     func generateLastName(){
         let temp = Array(Lastname)
@@ -187,12 +212,17 @@ class Model{
         return self.Names.count
     }
     
+    convenience override init(){
+        self.init(Lastname: "", Firstname: "", Bihua: 0, Sex: 0, Yijing: 0)
+    }
+    
     init(Lastname: String, Firstname: String, Bihua: Int, Sex: Int, Yijing: Int){
         self.Lastname = Lastname
         self.Firstname = Firstname
         self.Bihua = Bihua
         self.Sex = Sex
         self.Yijing = Yijing
+        //UniqueID = NSUUID().uuidString
         Firstnames.append(FirstName(Word: "昱丁", Bihua: 2, Sex: 1, YiJing: 2, meaning: "going to live a life with bright future", pronunciation: "yu ding"))
         Firstnames.append(FirstName(Word: "甲欣", Bihua: 0, Sex: 0, YiJing: 1, meaning: "be respected and loved by others", pronunciation: "jia xin"))
         Firstnames.append(FirstName(Word: "驿枚", Bihua: 2, Sex: 1, YiJing: 3, meaning: "have an infinitely bright future", pronunciation: "yi mei"))
