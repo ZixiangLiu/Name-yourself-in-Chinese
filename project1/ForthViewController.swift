@@ -15,6 +15,7 @@ class ForthViewController: UIViewController{
     @IBOutlet var email : UITextField!
     @IBOutlet var address : UITextField!
     @IBOutlet var generate : UIButton!
+    var transferObj : TransferObj = TransferObj()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "generateBusinessCard" {

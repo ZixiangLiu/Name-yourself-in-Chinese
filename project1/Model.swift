@@ -17,10 +17,176 @@ class Model{
     var Lastnames: [String] = ["艾","卞","陈","戴","艾","冯","郭","何","伊","蒋","柯","李","穆","牛","欧","裴","钱","任","孙","田","吴","魏","王","许","杨","赵"]
     var Firstnames: [FirstName] = []
     var outputLastName: String = ""
-    var outputFirstNames: [String] = []
+    var outputFirstNames: [FirstName] = []
     
     var Names : [String] = []
     var allNames : [String] = []
+    var selected : Int!
+    
+    func generateLastName(){
+        let temp = Array(Lastname)
+        if temp.count > 0 {
+            let letter = temp[0]
+            switch letter{
+            case "A" :
+                outputLastName = Lastnames[0]
+            case "a" :
+                outputLastName = Lastnames[0]
+            case "B" :
+                outputLastName = Lastnames[1]
+            case "b" :
+                outputLastName = Lastnames[1]
+            case "C" :
+                outputLastName = Lastnames[2]
+            case "c" :
+                outputLastName = Lastnames[2]
+            case "D" :
+                outputLastName = Lastnames[3]
+            case "d" :
+                outputLastName = Lastnames[3]
+            case "E" :
+                outputLastName = Lastnames[4]
+            case "e" :
+                outputLastName = Lastnames[4]
+            case "F" :
+                outputLastName = Lastnames[5]
+            case "f" :
+                outputLastName = Lastnames[5]
+            case "G" :
+                outputLastName = Lastnames[6]
+            case "g" :
+                outputLastName = Lastnames[6]
+            case "H" :
+                outputLastName = Lastnames[7]
+            case "h" :
+                outputLastName = Lastnames[7]
+            case "I" :
+                outputLastName = Lastnames[8]
+            case "i" :
+                outputLastName = Lastnames[8]
+            case "J" :
+                outputLastName = Lastnames[9]
+            case "j" :
+                outputLastName = Lastnames[9]
+            case "K" :
+                outputLastName = Lastnames[10]
+            case "k" :
+                outputLastName = Lastnames[10]
+            case "L" :
+                outputLastName = Lastnames[11]
+            case "l" :
+                outputLastName = Lastnames[11]
+            case "M" :
+                outputLastName = Lastnames[12]
+            case "m" :
+                outputLastName = Lastnames[12]
+            case "N" :
+                outputLastName = Lastnames[13]
+            case "n" :
+                outputLastName = Lastnames[13]
+            case "O" :
+                outputLastName = Lastnames[14]
+            case "o" :
+                outputLastName = Lastnames[14]
+            case "P" :
+                outputLastName = Lastnames[15]
+            case "P" :
+                outputLastName = Lastnames[15]
+            case "Q" :
+                outputLastName = Lastnames[16]
+            case "q" :
+                outputLastName = Lastnames[16]
+            case "R" :
+                outputLastName = Lastnames[17]
+            case "r" :
+                outputLastName = Lastnames[17]
+            case "S" :
+                outputLastName = Lastnames[18]
+            case "s" :
+                outputLastName = Lastnames[18]
+            case "T" :
+                outputLastName = Lastnames[19]
+            case "t" :
+                outputLastName = Lastnames[19]
+            case "U" :
+                outputLastName = Lastnames[20]
+            case "u" :
+                outputLastName = Lastnames[20]
+            case "V" :
+                outputLastName = Lastnames[21]
+            case "v" :
+                outputLastName = Lastnames[21]
+            case "W" :
+                outputLastName = Lastnames[22]
+            case "w" :
+                outputLastName = Lastnames[22]
+            case "X" :
+                outputLastName = Lastnames[23]
+            case "x" :
+                outputLastName = Lastnames[23]
+            case "Y" :
+                outputLastName = Lastnames[24]
+            case "y" :
+                outputLastName = Lastnames[24]
+            case "Z" :
+                outputLastName = Lastnames[25]
+            case "z" :
+                outputLastName = Lastnames[25]
+            default:
+                outputLastName = "Error"
+            }
+        }else{
+            outputLastName = "空"
+        }
+        
+    }
+    
+    func generateFirstName(){
+        var candidates: [FirstName] = []
+        for names in Firstnames{
+            if(Bihua == names.BiHua){
+                if(((Sex+1)==names.Sex)||(names.Sex==0)){
+                    if((Yijing+1)==names.YiJing){
+                        candidates.append(names)
+                    }
+                }
+            }
+        }
+        if(candidates.count==0){
+            outputFirstNames = [FirstName(Word: "傻逼", Bihua: 2, Sex: 1, YiJing: 2)]
+        }else{
+            if(candidates.count<5){
+                outputFirstNames = candidates
+            }else{
+                var output: [FirstName] = []
+                for _ in 1...5 {
+                    let rFirstIndex = Int(arc4random_uniform(UInt32(candidates.count)))
+                    output.append(candidates[rFirstIndex])
+                    candidates.remove(at: rFirstIndex)
+                }
+                outputFirstNames = output
+            }
+        }
+    }
+
+    func doStuff(){
+        self.generateLastName()
+        self.generateFirstName()
+        for i in self.outputFirstNames{
+            self.Names.append("\(self.outputLastName)\(i.Word)")
+            self.allNames.append("\(self.outputLastName)\(i.Word)")
+        }
+    }
+    
+    func deleteName(_ index: Int) -> String{
+        let name = Names[index]
+        Names.remove(at: index)
+        return name
+    }
+    
+    func getNumberRow() -> Int{
+        return self.Names.count
+    }
     
     init(Lastname: String, Firstname: String, Bihua: Int, Sex: Int, Yijing: Int){
         self.Lastname = Lastname
@@ -153,170 +319,5 @@ class Model{
         Firstnames.append(FirstName(Word:"含玉", Bihua: 0, Sex: 2, YiJing: 3))
         Firstnames.append(FirstName(Word:"元风", Bihua: 0, Sex: 2, YiJing: 3))
         Firstnames.append(FirstName(Word:"听白", Bihua: 0, Sex: 2, YiJing: 3))
-    }
-    
-    func generateLastName(){
-        let temp = Array(Lastname)
-        if temp.count > 0 {
-            let letter = temp[0]
-            switch letter{
-            case "A" :
-                outputLastName = Lastnames[0]
-            case "a" :
-                outputLastName = Lastnames[0]
-            case "B" :
-                outputLastName = Lastnames[1]
-            case "b" :
-                outputLastName = Lastnames[1]
-            case "C" :
-                outputLastName = Lastnames[2]
-            case "c" :
-                outputLastName = Lastnames[2]
-            case "D" :
-                outputLastName = Lastnames[3]
-            case "d" :
-                outputLastName = Lastnames[3]
-            case "E" :
-                outputLastName = Lastnames[4]
-            case "e" :
-                outputLastName = Lastnames[4]
-            case "F" :
-                outputLastName = Lastnames[5]
-            case "f" :
-                outputLastName = Lastnames[5]
-            case "G" :
-                outputLastName = Lastnames[6]
-            case "g" :
-                outputLastName = Lastnames[6]
-            case "H" :
-                outputLastName = Lastnames[7]
-            case "h" :
-                outputLastName = Lastnames[7]
-            case "I" :
-                outputLastName = Lastnames[8]
-            case "i" :
-                outputLastName = Lastnames[8]
-            case "J" :
-                outputLastName = Lastnames[9]
-            case "j" :
-                outputLastName = Lastnames[9]
-            case "K" :
-                outputLastName = Lastnames[10]
-            case "k" :
-                outputLastName = Lastnames[10]
-            case "L" :
-                outputLastName = Lastnames[11]
-            case "l" :
-                outputLastName = Lastnames[11]
-            case "M" :
-                outputLastName = Lastnames[12]
-            case "m" :
-                outputLastName = Lastnames[12]
-            case "N" :
-                outputLastName = Lastnames[13]
-            case "n" :
-                outputLastName = Lastnames[13]
-            case "O" :
-                outputLastName = Lastnames[14]
-            case "o" :
-                outputLastName = Lastnames[14]
-            case "P" :
-                outputLastName = Lastnames[15]
-            case "P" :
-                outputLastName = Lastnames[15]
-            case "Q" :
-                outputLastName = Lastnames[16]
-            case "q" :
-                outputLastName = Lastnames[16]
-            case "R" :
-                outputLastName = Lastnames[17]
-            case "r" :
-                outputLastName = Lastnames[17]
-            case "S" :
-                outputLastName = Lastnames[18]
-            case "s" :
-                outputLastName = Lastnames[18]
-            case "T" :
-                outputLastName = Lastnames[19]
-            case "t" :
-                outputLastName = Lastnames[19]
-            case "U" :
-                outputLastName = Lastnames[20]
-            case "u" :
-                outputLastName = Lastnames[20]
-            case "V" :
-                outputLastName = Lastnames[21]
-            case "v" :
-                outputLastName = Lastnames[21]
-            case "W" :
-                outputLastName = Lastnames[22]
-            case "w" :
-                outputLastName = Lastnames[22]
-            case "X" :
-                outputLastName = Lastnames[23]
-            case "x" :
-                outputLastName = Lastnames[23]
-            case "Y" :
-                outputLastName = Lastnames[24]
-            case "y" :
-                outputLastName = Lastnames[24]
-            case "Z" :
-                outputLastName = Lastnames[25]
-            case "z" :
-                outputLastName = Lastnames[25]
-            default:
-                outputLastName = "Error"
-            }
-        }else{
-            outputLastName = "空"
-        }
-        
-    }
-    
-    func generateFirstName(){
-        var candidates: [String] = []
-        for names in Firstnames{
-            if(Bihua == names.BiHua){
-                if(((Sex+1)==names.Sex)||(names.Sex==0)){
-                    if((Yijing+1)==names.YiJing){
-                        candidates.append(names.Word)
-                    }
-                }
-            }
-        }
-        if(candidates.count==0){
-            outputFirstNames = ["Fake"]
-        }else{
-            if(candidates.count<5){
-                outputFirstNames = candidates
-            }else{
-                var output: [String] = []
-                for _ in 1...5 {
-                    let rFirstIndex = Int(arc4random_uniform(UInt32(candidates.count)))
-                    output.append(candidates[rFirstIndex])
-                    candidates.remove(at: rFirstIndex)
-                }
-                outputFirstNames = output
-            }
-        }
-    }
-
-    func doStuff(){
-        self.generateLastName()
-        self.generateFirstName()
-        for i in self.outputFirstNames{
-            self.Names.append("\(self.outputLastName)\(i)")
-            self.allNames.append("\(self.outputLastName)\(i)")
-        }
-    }
-    
-    func deleteName(_ index: Int) -> String{
-        let name = Names[index]
-        Names.remove(at: index)
-        return name
-    }
-    
-    func getNumberRow() -> Int{
-        return self.Names.count
     }
 }

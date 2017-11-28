@@ -9,8 +9,19 @@
 import UIKit
 class SecondViewController: UITableViewController{
     
+    @IBOutlet weak var bottomName: UILabel!
+    @IBOutlet weak var bottomMeaning: UILabel!
+    @IBOutlet weak var bottomPronunciation: UILabel!
     var model : Model!
     var transferObj : TransferObj = TransferObj()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.transferObj.model = self.model
+        if(segue.identifier=="enter_info"){
+            let destination = segue.destination as! ForthViewController
+            destination.transferObj = self.transferObj
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,7 +38,10 @@ class SecondViewController: UITableViewController{
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 65
+        tableView.estimatedRowHeight = 75
+        bottomName.text = "Name"
+        bottomMeaning.text = "Choose a name to display"
+        bottomPronunciation.text = ""
     }
     
     @IBAction func toggleEditMode(_ sender: UIButton) {
@@ -50,6 +64,7 @@ class SecondViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! NameCell
         cell.title.text = model.Names[indexPath.row]
+        cell.meaning.text = model.outputFirstNames[indexPath.row].meaning
         return cell
     }
     
@@ -83,5 +98,12 @@ class SecondViewController: UITableViewController{
         if editingStyle == .delete {
             deleteRow(indexPath)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.model.selected = indexPath.row
+        bottomPronunciation.text = self.model.outputFirstNames[self.model.selected].pronunciation
+        bottomMeaning.text = self.model.outputFirstNames[self.model.selected].meaning
+        bottomName.text = self.model.Names[self.model.selected]
     }
 }
