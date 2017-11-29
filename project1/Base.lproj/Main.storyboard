@@ -944,6 +944,7 @@
                         <outlet property="chinese" destination="Ywc-Zm-Rtm" id="ur0-wj-0gf"/>
                         <outlet property="chineseName" destination="iwx-Ff-ssY" id="cGG-gc-k2L"/>
                         <outlet property="chineseName2" destination="dI1-ae-wz3" id="r8a-GJ-tr0"/>
+                        <outlet property="chineseparent" destination="3ym-Iv-q7k" id="P88-6U-ZCE"/>
                         <outlet property="company" destination="meT-Bb-Ubz" id="xdd-bU-TnP"/>
                         <outlet property="company2" destination="ZR4-b2-pQX" id="V37-6N-Nwo"/>
                         <outlet property="email" destination="WaG-Oe-Txj" id="adW-fh-vJU"/>
@@ -951,6 +952,7 @@
                         <outlet property="english" destination="enX-rd-Ugg" id="xQV-ar-gOi"/>
                         <outlet property="englishName" destination="jGx-4k-RPm" id="6Ca-lU-R6v"/>
                         <outlet property="englishName2" destination="wlS-qP-o4E" id="AzC-G9-sFL"/>
+                        <outlet property="englishparent" destination="Ryp-He-1TK" id="I2P-7L-JXg"/>
                         <outlet property="jobtitle" destination="f7O-IN-sIR" id="ql7-4n-wvT"/>
                         <outlet property="jobtitle2" destination="pIx-gC-Wte" id="Twh-Ub-qhX"/>
                         <outlet property="phone" destination="Tzc-ac-h9x" id="mwp-MW-H63"/>

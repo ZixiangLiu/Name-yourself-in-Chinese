@@ -17,6 +17,8 @@ class FifthViewController: UIViewController{
     var transferObj : TransferObj = TransferObj()
     var model : Model!
     
+    @IBOutlet weak var englishparent: UIView!
+    @IBOutlet weak var chineseparent: UIView!
     @IBOutlet var company : UILabel!
     @IBOutlet var jobtitle : UILabel!
     @IBOutlet var email : UILabel!
@@ -57,13 +59,13 @@ class FifthViewController: UIViewController{
     }
     
     @IBAction func saveImage(){
-        save(english)
-        save(chinese)
+        save(english, englishparent)
+        save(chinese, chineseparent)
     }
     
-    func save(_ version: UIView){
+    func save(_ version: UIView, _ parentview : UIView){
         UIGraphicsBeginImageContextWithOptions(CGSize(width: version.frame.width, height: version.frame.height), false, 0);
-        self.view.drawHierarchy(in: CGRect(x: -version.frame.origin.x, y: -version.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height), afterScreenUpdates: true)
+        parentview.drawHierarchy(in: CGRect(x: -version.frame.origin.x, y: -version.frame.origin.y, width: parentview.frame.width, height: parentview.frame.height), afterScreenUpdates: true)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!;
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     }

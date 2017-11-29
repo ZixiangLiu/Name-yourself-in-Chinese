@@ -1,10 +1,9 @@
 CSC214
-Project1
+Project2
 Team Member: Junyang Chen, Yifei Yang, Zixiang Liu, Yukun Chen
 App Name: Name Yourself in Chinese
 
 Proposal:
-
 	Introduction
 	With Chinese culture affecting this whole world increasingly, having a nice and sounding Chinese name will become a very meaningful thing. A good Chinese name can promote better communication with the Chinese people, and let the others feel your understanding of the Chinese culture. Not only that, as the Chinese proverb, good names can make people shine, a beautiful Chinese name can bring good luck and lofty future.
 
@@ -34,24 +33,27 @@ Proposal:
 		easiness of writing, meaning
 
 	User experience:
-	1、Open the app
-	2、Input information
-	3、See a list of candidates
-	4、edit candidates
-	5、Select preferred one
-	6、go back to choose another combination
+	1. Open the app
+	2. Input information
+	3. See a list of candidates
+	4. edit candidates
+	5. Select preferred one
+	6. Fill in detailed information
+	7. Generate busnisscard, which can save to picture
+	8. Go back to choose another combination
 
-	** A tab bar controller and view controller has been added to satisfy the animation requirement.
+Update from project1:
+	1. Add pronunciation for all Chinese first names and last names.
+	2. Add brief meaning for all Chinese first names
+	3. Add business card function; After select a name, user can now fill in required information and generate business card
+	4. Business card can be stored into camera roll.
+	5. Use stack view for the questionaire interface
+	6. Save information in first view entered by the user across app restarts
+	7. Add photo and camera function in tab bar controller
 
-Requirements:
-	animation in second option of tab bar controller
-	table view support edit and delete operation, add & move is not supported because it is meaningless in our app. 
-	localization: Chinese traditional
-	Bundle display name: Mingzi (Chinese for Name)
-	table view cells are costumed, which will be more complex in project 2
-	table view cell uses dynamic type
-	
+
 
 Honor Pledge:
 	I affirm that I have not given or received any unauthorized help on this assignment, and that this work is my own.
+
 
