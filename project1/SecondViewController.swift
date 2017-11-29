@@ -39,9 +39,9 @@ class SecondViewController: UITableViewController{
         tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 75
-        bottomName.text = "Name"
-        bottomMeaning.text = "Choose a name to display"
-        bottomPronunciation.text = ""
+        bottomName.text = NSLocalizedString("name", comment: "name in bottom of view 2")
+        bottomMeaning.text = NSLocalizedString("meaning", comment: "meaning in bottom of view 2")
+        bottomPronunciation.text = NSLocalizedString("pronunciation", comment: "pronunce in view 2")
     }
     
     @IBAction func toggleEditMode(_ sender: UIButton) {

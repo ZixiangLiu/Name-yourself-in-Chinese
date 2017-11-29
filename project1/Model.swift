@@ -19,6 +19,12 @@ class Model: NSObject, NSCoding{
     var outputFirstNames: [FirstName] = []
     //var UniqueID: String
     
+    var company : String!
+    var jobtitle : String!
+    var email : String!
+    var phone : String!
+    var address : String!
+    
     var Names : [String] = []
     var allNames : [String] = []
     var selected : Int!

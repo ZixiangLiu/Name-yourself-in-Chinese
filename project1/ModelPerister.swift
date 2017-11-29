@@ -16,17 +16,17 @@ class ModelPerister: NSObject{
     }()
     
     class func setModel(_ model: Model) -> Bool {
-        print("set model")
-        print(model.Lastname)
+//        print("set model")
+//        print(model.Lastname)
         return NSKeyedArchiver.archiveRootObject(model, toFile: ModelArchiveURL.path!)
     }
     
     class func getModel() -> Model{
         if let model = NSKeyedUnarchiver.unarchiveObject(withFile: ModelArchiveURL.path!) as? Model{
-            print("if")
+//            print("if")
             return model
         }else{
-            print("else")
+//            print("else")
             return Model()
         }
     }

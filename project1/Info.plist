@@ -27,9 +27,9 @@
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>yes plz</string>
+	<string>The app need premission to save image</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>yes plz</string>
+	<string>The app need premission to save image</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array/>
 	<key>UISupportedInterfaceOrientations</key>

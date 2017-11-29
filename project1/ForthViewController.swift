@@ -21,6 +21,21 @@ class ForthViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.model = transferObj.model!
+        if let saved_company = self.model.company{
+            self.company.text = saved_company
+        }
+        if let saved_jobtitle = self.model.jobtitle{
+            self.jobTitle.text = saved_jobtitle
+        }
+        if let saved_phone = self.model.phone{
+            self.phone.text = saved_phone
+        }
+        if let saved_email = self.model.email{
+            self.email.text = saved_email
+        }
+        if let saved_address = self.model.address{
+            self.address.text = saved_address
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,6 +48,11 @@ class ForthViewController: UIViewController{
             destination.Email = email
             destination.Address = address
             destination.transferObj = self.transferObj
+            self.model.company = company.text
+            self.model.jobtitle = jobTitle.text
+            self.model.phone = phone.text
+            self.model.email = email.text
+            self.model.address = address.text
         }
     }
 

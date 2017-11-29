@@ -1,6 +1,15 @@
 
+/* Class = "UILabel"; text = "Email:"; ObjectID = "1VM-UW-ycy"; */
+"1VM-UW-ycy.text" = "電郵地址:";
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "2A4-Ac-wng"; */
+"2A4-Ac-wng.text" = "移動電話:";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "3yQ-Pm-aB4"; */
+"3yQ-Pm-aB4.text" = "住址:";
+
 /* Class = "UILabel"; text = "Meaning"; ObjectID = "43G-1m-ePH"; */
-"43G-1m-ePH.text" = "意境";
+"43G-1m-ePH.text" = "含義";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "5MS-Qt-twR"; */
 "5MS-Qt-twR.text" = "標籤";
@@ -9,7 +18,7 @@
 "5yN-sy-Xye.text" = "放大";
 
 /* Class = "UILabel"; text = "Drop Off"; ObjectID = "6aG-ZA-vRf"; */
-"6aG-ZA-vRf.text" = "下降";
+"6aG-ZA-vRf.text" = "掉落";
 
 /* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "7QA-79-7b1"; */
 "7QA-79-7b1.normalTitle" = "編輯";
@@ -24,61 +33,127 @@
 "9aQ-6c-ii6.segmentTitles[1]" = "女";
 
 /* Class = "UIButton"; normalTitle = "Generate"; ObjectID = "CBX-fg-UOw"; */
-"CBX-fg-UOw.normalTitle" = "生成名字";
-
-/* Class = "UILabel"; text = "Label"; ObjectID = "Dyc-Dk-MxR"; */
-"Dyc-Dk-MxR.text" = "標籤";
+"CBX-fg-UOw.normalTitle" = "生成姓名";
 
 /* Class = "UILabel"; text = "Change Color"; ObjectID = "Emp-Q0-60f"; */
-"Emp-Q0-60f.text" = "換顏色";
+"Emp-Q0-60f.text" = "改變顏色";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "Ffg-Bf-YND"; */
+"Ffg-Bf-YND.text" = "地址";
 
 /* Class = "UITabBarItem"; title = "Main App"; ObjectID = "Iyt-TV-GIg"; */
-"Iyt-TV-GIg.title" = "主程序";
+"Iyt-TV-GIg.title" = "主體";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "Jqs-8L-8sR"; */
-"Jqs-8L-8sR.text" = "標籤";
+/* Class = "UITabBarItem"; title = "camera"; ObjectID = "KLJ-Gy-pol"; */
+"KLJ-Gy-pol.title" = "相機";
 
 /* Class = "UILabel"; text = "Last name"; ObjectID = "KNj-7p-9Mr"; */
 "KNj-7p-9Mr.text" = "姓";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "Qpl-ba-ANT"; */
-"Qpl-ba-ANT.text" = "標籤";
+/* Class = "UILabel"; text = "Address"; ObjectID = "LVs-AU-kcn"; */
+"LVs-AU-kcn.text" = "地址";
+
+/* Class = "UILabel"; text = "Chinese Version"; ObjectID = "Nc4-sh-PZf"; */
+"Nc4-sh-PZf.text" = "中文版";
+
+/* Class = "UILabel"; text = "English Version"; ObjectID = "O83-y9-u1A"; */
+"O83-y9-u1A.text" = "英文版";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "OkT-H2-nmy"; */
+"OkT-H2-nmy.normalTitle" = "下一頁";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SMk-Wc-OE3"; */
+"SMk-Wc-OE3.text" = "標籤";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "T3l-Jh-Jgj"; */
+"T3l-Jh-Jgj.text" = "標籤";
 
 /* Class = "UILabel"; text = "Fade"; ObjectID = "T80-Kk-mbM"; */
-"T80-Kk-mbM.text" = "淡出";
+"T80-Kk-mbM.text" = "漸變";
+
+/* Class = "UIButton"; normalTitle = "save"; ObjectID = "TxX-1p-TVo"; */
+"TxX-1p-TVo.normalTitle" = "保存";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "Tzc-ac-h9x"; */
+"Tzc-ac-h9x.text" = "移動電話";
 
 /* Class = "UIButton"; normalTitle = "Silly Animation"; ObjectID = "U9G-S5-EYo"; */
-"U9G-S5-EYo.normalTitle" = "傻逼動畫";
+"U9G-S5-EYo.normalTitle" = "愚蠢動畫";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "XxW-DN-WeG"; */
-"XxW-DN-WeG.text" = "標籤";
+/* Class = "UILabel"; text = "Email"; ObjectID = "WaG-Oe-Txj"; */
+"WaG-Oe-Txj.text" = "電郵地址";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "Y7J-q6-7Ps"; */
+"Y7J-q6-7Ps.text" = "移動電話";
 
 /* Class = "UISegmentedControl"; Yr0-8L-S57.segmentTitles[0] = "easy"; ObjectID = "Yr0-8L-S57"; */
 "Yr0-8L-S57.segmentTitles[0]" = "簡單";
 
 /* Class = "UISegmentedControl"; Yr0-8L-S57.segmentTitles[1] = "normal"; ObjectID = "Yr0-8L-S57"; */
-"Yr0-8L-S57.segmentTitles[1]" = "正常";
+"Yr0-8L-S57.segmentTitles[1]" = "中等";
 
 /* Class = "UISegmentedControl"; Yr0-8L-S57.segmentTitles[2] = "hard"; ObjectID = "Yr0-8L-S57"; */
-"Yr0-8L-S57.segmentTitles[2]" = "難";
+"Yr0-8L-S57.segmentTitles[2]" = "困難";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "hXZ-BM-jCQ"; */
-"hXZ-BM-jCQ.text" = "標籤";
+/* Class = "UILabel"; text = "Company"; ObjectID = "ZR4-b2-pQX"; */
+"ZR4-b2-pQX.text" = "公司名稱";
+
+/* Class = "UIButton"; normalTitle = "save as image"; ObjectID = "aZI-Jl-WuL"; */
+"aZI-Jl-WuL.normalTitle" = "保存為圖片";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "c5L-EF-hg8"; */
+"c5L-EF-hg8.text" = "標籤";
+
+/* Class = "UILabel"; text = "Chinese Name"; ObjectID = "dI1-ae-wz3"; */
+"dI1-ae-wz3.text" = "中文名";
+
+/* Class = "UILabel"; text = "Job Title:"; ObjectID = "esD-HB-6wf"; */
+"esD-HB-6wf.text" = "職位:";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "f7O-IN-sIR"; */
+"f7O-IN-sIR.text" = "標題";
 
 /* Class = "UILabel"; text = "Gender"; ObjectID = "hZL-HB-9aB"; */
 "hZL-HB-9aB.text" = "性別";
 
+/* Class = "UILabel"; text = "Chinese Name"; ObjectID = "iwx-Ff-ssY"; */
+"iwx-Ff-ssY.text" = "中文名";
+
+/* Class = "UILabel"; text = "English Name"; ObjectID = "jGx-4k-RPm"; */
+"jGx-4k-RPm.text" = "英文名";
+
+/* Class = "UILabel"; text = "Company"; ObjectID = "meT-Bb-Ubz"; */
+"meT-Bb-Ubz.text" = "公司";
+
+/* Class = "UIButton"; normalTitle = "Generate Business Card"; ObjectID = "n6r-IE-WU3"; */
+"n6r-IE-WU3.normalTitle" = "產生個人名片";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "pIx-gC-Wte"; */
+"pIx-gC-Wte.text" = "標題";
+
 /* Class = "UILabel"; text = "First name"; ObjectID = "r9u-dg-vCO"; */
 "r9u-dg-vCO.text" = "名";
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "rsH-kL-mnf"; */
+"rsH-kL-mnf.text" = "標籤";
+
+/* Class = "UILabel"; text = "Company:"; ObjectID = "soU-xX-Vqd"; */
+"soU-xX-Vqd.text" = "公司名稱:";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "ttq-qf-D7g"; */
+"ttq-qf-D7g.text" = "電郵地址";
+
 /* Class = "UISegmentedControl"; vKM-bj-ohq.segmentTitles[0] = "trivial"; ObjectID = "vKM-bj-ohq"; */
-"vKM-bj-ohq.segmentTitles[0]" = "易懂的";
+"vKM-bj-ohq.segmentTitles[0]" = "簡明";
 
 /* Class = "UISegmentedControl"; vKM-bj-ohq.segmentTitles[1] = "Modish"; ObjectID = "vKM-bj-ohq"; */
-"vKM-bj-ohq.segmentTitles[1]" = "流行的";
+"vKM-bj-ohq.segmentTitles[1]" = "清晰";
 
 /* Class = "UISegmentedControl"; vKM-bj-ohq.segmentTitles[2] = "Quaint"; ObjectID = "vKM-bj-ohq"; */
-"vKM-bj-ohq.segmentTitles[2]" = "古雅的";
+"vKM-bj-ohq.segmentTitles[2]" = "古雅";
+
+/* Class = "UILabel"; text = "English Name"; ObjectID = "wlS-qP-o4E"; */
+"wlS-qP-o4E.text" = "英文名";
 
 /* Class = "UILabel"; text = "Writable"; ObjectID = "wqi-04-Jr1"; */
-"wqi-04-Jr1.text" = "易寫度";
+"wqi-04-Jr1.text" = "難易";
