@@ -200,20 +200,11 @@
                                                     <segue destination="m65-0F-i5V" kind="show" identifier="send_label" id="bQT-Ov-Kpu"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqn-hb-OCq">
-                                                <rect key="frame" x="184" y="227.33333333333337" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <segue destination="Nta-Im-Lk6" kind="show" id="J2h-tQ-AEw"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="Oqn-hb-OCq" firstAttribute="centerX" secondItem="lXm-Nw-A7R" secondAttribute="centerX" id="ZXD-SG-4wi"/>
                                             <constraint firstItem="CBX-fg-UOw" firstAttribute="centerX" secondItem="lXm-Nw-A7R" secondAttribute="centerX" id="ZwF-JC-nLy"/>
                                             <constraint firstItem="CBX-fg-UOw" firstAttribute="centerY" secondItem="lXm-Nw-A7R" secondAttribute="centerY" id="bd7-D0-SB8"/>
-                                            <constraint firstItem="Oqn-hb-OCq" firstAttribute="centerY" secondItem="lXm-Nw-A7R" secondAttribute="centerY" multiplier="1.5" id="xQA-u8-oTc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -388,35 +379,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-ch-PfD">
-                                <rect key="frame" x="184" y="657" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="fetchImage:" destination="Nta-Im-Lk6" eventType="touchUpInside" id="ryc-Db-Zww"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LOe-ga-gLe">
-                                <rect key="frame" x="0.0" y="64" width="414" height="593"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-lh-o8J">
+                                <rect key="frame" x="57" y="218" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="LOe-ga-gLe" firstAttribute="top" secondItem="Wau-Q8-SQ5" secondAttribute="top" id="334-ik-2f8"/>
-                            <constraint firstItem="QOE-ch-PfD" firstAttribute="top" secondItem="LOe-ga-gLe" secondAttribute="bottom" id="Dcv-xZ-RnH"/>
-                            <constraint firstItem="QOE-ch-PfD" firstAttribute="bottom" secondItem="Wau-Q8-SQ5" secondAttribute="bottom" id="JAc-qs-hn5"/>
-                            <constraint firstItem="LOe-ga-gLe" firstAttribute="leading" secondItem="Wau-Q8-SQ5" secondAttribute="leading" id="Ksx-Ns-m7M"/>
-                            <constraint firstItem="Wau-Q8-SQ5" firstAttribute="trailing" secondItem="LOe-ga-gLe" secondAttribute="trailing" id="laX-N8-bUA"/>
-                            <constraint firstItem="QOE-ch-PfD" firstAttribute="centerX" secondItem="bYE-yj-e56" secondAttribute="centerX" id="rV2-mU-M4s"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Wau-Q8-SQ5"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="LOe-ga-gLe" id="9ig-Vd-tt0"/>
+                        <outlet property="imageView" destination="cZb-lh-o8J" id="sft-GS-dxg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cz-Dq-yql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="924"/>
+            <point key="canvasLocation" x="4101" y="113"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="qbM-Jb-76K">
@@ -975,6 +952,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="callSafariWithButton:" destination="GcY-53-jlo" eventType="touchUpInside" id="23f-vq-5MZ"/>
+                                                    <segue destination="Nta-Im-Lk6" kind="show" identifier="show" id="Z0F-kQ-rcY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi0-qR-INr">
@@ -982,6 +960,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="callSafariWithButton:" destination="GcY-53-jlo" eventType="touchUpInside" id="s2b-0w-QZU"/>
+                                                    <segue destination="Nta-Im-Lk6" kind="show" identifier="show" id="z4b-cZ-N0e"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCA-Q5-mhB">
@@ -989,6 +968,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="callSafariWithButton:" destination="GcY-53-jlo" eventType="touchUpInside" id="nOj-wJ-Pv9"/>
+                                                    <segue destination="Nta-Im-Lk6" kind="show" identifier="show" id="xv9-0x-B5y"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1101,4 +1081,7 @@
         <image name="apple" width="30" height="30"/>
         <image name="windows" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xv9-0x-B5y"/>
+    </inferredMetricsTieBreakers>
 </document>

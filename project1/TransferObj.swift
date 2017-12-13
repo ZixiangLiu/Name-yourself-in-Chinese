@@ -8,7 +8,7 @@
 
 class TransferObj{
     var model : Model!
-    
+    var url : String!
     init(){
         
     }

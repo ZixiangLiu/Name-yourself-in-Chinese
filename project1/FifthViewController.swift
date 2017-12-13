@@ -66,6 +66,13 @@ class FifthViewController: UIViewController{
         button3.setTitle(String(words[2]), for: .normal)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "show" {
+            let destination = segue.destination as! ImageBrowserViewController
+            destination.transferobj = self.transferObj
+        }
+    }
+    
     @IBAction func saveImage(){
         save(english, englishparent)
         save(chinese, chineseparent)
@@ -82,11 +89,7 @@ class FifthViewController: UIViewController{
         let chineseWord = button.title(for: .normal)!
         let unicodeScalars = chineseWord.unicodeScalars
         let Myunicode = String(unicodeScalars[unicodeScalars.startIndex].value, radix: 16, uppercase: true)
-        let url = "http://bishun.shufaji.com/0x"+Myunicode+".html"
-        if let link = URL(string: url){
-            UIApplication.shared.open(link)
-        }else{
-            print("Something is wrong")
-        }
+        let url = "https://raw.githubusercontent.com/ZixiangLiu/Name-yourself-in-Chinese/master/GIF/1.GIF"
+        self.transferObj.url = url
     }
 }

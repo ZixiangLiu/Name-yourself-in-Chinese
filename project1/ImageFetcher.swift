@@ -13,7 +13,7 @@ enum ImageFetchError: Error {
 }
 
 enum ImageFetchResult {
-    case ImageSuccess(String)
+    case ImageSuccess(UIImage)
     case ImageFailure(Error)
 }
 
@@ -28,7 +28,7 @@ class ImageFetcher {
                 (data, response, error) -> Void in
                 
                 guard let imageData = data,
-                    let _ = UIImage.init(data: imageData) else {
+                    let image = UIImage.init(data: imageData) else {
                         if data == nil {
                             completion(.ImageFailure(error!))
                         }
@@ -38,7 +38,26 @@ class ImageFetcher {
                         return
                 }
                 
-                completion(.ImageSuccess(url))
+                guard let source = CGImageSourceCreateWithData(imageData as CFData, nil) else {
+                    print("SwiftGif: Source for the image does not exist")
+                    return
+                }
+                
+                let count = CGImageSourceGetCount(source)
+                var images = [UIImage]()
+                // Fill arrays
+                for i in 0..<count {
+                    // Add image
+                    if let image = CGImageSourceCreateImageAtIndex(source, i, nil) {
+                        images.append(UIImage.init(cgImage: image))
+                    }
+                }
+                
+                if let gifimage = UIImage.animatedImage(with: images, duration:4) {
+                    completion(.ImageSuccess(gifimage))
+                } else{
+                    print("Nil GIF")
+                }
             }
             task.resume()
         }
