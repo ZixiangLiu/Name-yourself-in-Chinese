@@ -11,6 +11,8 @@
 		092C4C801FCCFDF00026F232 /* LastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C4C7F1FCCFDF00026F232 /* LastName.swift */; };
 		09E1B0091FB6AA04002E5188 /* TransferObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1B0081FB6AA04002E5188 /* TransferObj.swift */; };
 		09EAD4551FCE6915004E5B6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09EAD4571FCE6915004E5B6F /* Localizable.strings */; };
+		09F878E31FE1C553004AFC89 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F878E21FE1C553004AFC89 /* ImageFetcher.swift */; };
+		09F878E51FE1C589004AFC89 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F878E41FE1C589004AFC89 /* ImageViewController.swift */; };
 		68A9F4E21FB67B650070F534 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A9F4E11FB67B650070F534 /* ThirdViewController.swift */; };
 		68E809AC1FCB83A4005DD62B /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E809AB1FCB83A4005DD62B /* ForthViewController.swift */; };
 		68E809AE1FCB99DE005DD62B /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E809AD1FCB99DE005DD62B /* FifthViewController.swift */; };
@@ -51,6 +53,8 @@
 		09EAD4511FCE65B3004E5B6F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		09EAD4561FCE6915004E5B6F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		09EAD4581FCE691B004E5B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09F878E21FE1C553004AFC89 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		09F878E41FE1C589004AFC89 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		68A9F4E11FB67B650070F534 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		68E809AB1FCB83A4005DD62B /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		68E809AD1FCB99DE005DD62B /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				FA4FF64D1FCDDFCA0084CC27 /* SixthViewController.swift */,
 				09E1B0081FB6AA04002E5188 /* TransferObj.swift */,
 				FA4A30FF1FB0E74D00EBE399 /* Main.storyboard */,
+				09F878E21FE1C553004AFC89 /* ImageFetcher.swift */,
+				09F878E41FE1C589004AFC89 /* ImageViewController.swift */,
 				FA4A312D1FB0EDE500EBE399 /* FirstName.swift */,
 				092C4C7F1FCCFDF00026F232 /* LastName.swift */,
 				090117D01FB690F100A71235 /* NameCell.swift */,
@@ -281,10 +287,12 @@
 				FA4A30FC1FB0E74D00EBE399 /* AppDelegate.swift in Sources */,
 				09E1B0091FB6AA04002E5188 /* TransferObj.swift in Sources */,
 				FA4A31321FB104B100EBE399 /* SecondViewController.swift in Sources */,
+				09F878E51FE1C589004AFC89 /* ImageViewController.swift in Sources */,
 				FA4FF64E1FCDDFCA0084CC27 /* SixthViewController.swift in Sources */,
 				68E809AC1FCB83A4005DD62B /* ForthViewController.swift in Sources */,
 				68A9F4E21FB67B650070F534 /* ThirdViewController.swift in Sources */,
 				FA4A312C1FB0EC7100EBE399 /* Model.swift in Sources */,
+				09F878E31FE1C553004AFC89 /* ImageFetcher.swift in Sources */,
 				FA4FF6501FCDECF30084CC27 /* ModelPerister.swift in Sources */,
 				092C4C801FCCFDF00026F232 /* LastName.swift in Sources */,
 			);
