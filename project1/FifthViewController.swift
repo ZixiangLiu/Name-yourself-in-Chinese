@@ -17,6 +17,10 @@ class FifthViewController: UIViewController{
     var transferObj : TransferObj = TransferObj()
     var model : Model!
     
+    @IBOutlet var button1 : UIButton!
+    @IBOutlet var button2 : UIButton!
+    @IBOutlet var button3 : UIButton!
+    
     @IBOutlet weak var englishparent: UIView!
     @IBOutlet weak var chineseparent: UIView!
     @IBOutlet var company : UILabel!
@@ -37,7 +41,6 @@ class FifthViewController: UIViewController{
     @IBOutlet weak var english: UIView!
     @IBOutlet weak var chinese: UIView!
     
-    
     override func viewWillAppear(_ animated: Bool) {
         self.model = transferObj.model!
         super.viewWillAppear(animated)
@@ -56,6 +59,11 @@ class FifthViewController: UIViewController{
         address2.text = Address.text!
         chineseName2.text = self.model.Names[self.model.selected]
         englishName2.text = self.model.Firstname + " " + self.model.Lastname
+        
+        let words = Array(chineseName.text!)
+        button1.setTitle(String(words[0]), for: .normal)
+        button2.setTitle(String(words[1]), for: .normal)
+        button3.setTitle(String(words[2]), for: .normal)
     }
     
     @IBAction func saveImage(){
@@ -68,5 +76,17 @@ class FifthViewController: UIViewController{
         parentview.drawHierarchy(in: CGRect(x: -version.frame.origin.x, y: -version.frame.origin.y, width: parentview.frame.width, height: parentview.frame.height), afterScreenUpdates: true)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!;
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    }
+    
+    @IBAction func callSafari(button: UIButton){
+        let chineseWord = button.title(for: .normal)!
+        let unicodeScalars = chineseWord.unicodeScalars
+        let Myunicode = String(unicodeScalars[unicodeScalars.startIndex].value, radix: 16, uppercase: true)
+        let url = "http://bishun.shufaji.com/0x"+Myunicode+".html"
+        if let link = URL(string: url){
+            UIApplication.shared.open(link)
+        }else{
+            print("Something is wrong")
+        }
     }
 }

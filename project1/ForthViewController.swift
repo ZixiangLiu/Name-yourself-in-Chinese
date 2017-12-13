@@ -18,6 +18,10 @@ class ForthViewController: UIViewController{
     var transferObj : TransferObj = TransferObj()
     var model : Model!
     
+    @IBAction func dismiss(){
+        self.view.endEditing(true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.model = transferObj.model!
