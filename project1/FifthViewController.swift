@@ -89,7 +89,7 @@ class FifthViewController: UIViewController{
         let chineseWord = button.title(for: .normal)!
         let unicodeScalars = chineseWord.unicodeScalars
         let Myunicode = String(unicodeScalars[unicodeScalars.startIndex].value, radix: 16, uppercase: true)
-        let url = "https://raw.githubusercontent.com/ZixiangLiu/Name-yourself-in-Chinese/master/GIF/1.GIF"
+        let url = "https://raw.githubusercontent.com/ZixiangLiu/Name-yourself-in-Chinese/master/GIF/\(Myunicode).gif"
         self.transferObj.url = url
     }
 }
