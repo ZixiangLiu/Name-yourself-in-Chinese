@@ -11,7 +11,7 @@ Proposal:
 	Generally the app is designed for those who like Chinese culture and wish to have a Chinese name. While businessmen who want to have Chinese Business card will find this app is the only option on the market.
 
 	Existing Apps
-	Since similar apps in appstore cannot generate business card, and cannot show correct way of writing the name, let only writing practice, our app is tailored for business oriented customers.
+	Since similar apps in Appstore cannot generate business card, and cannot show correct way of writing the name, let only writing practice, our app is tailored for business oriented customers.
 
 	How to use
 	By input an English last name, the application would automatically generate a corresponding Chinese last name. And then depend on users’ gender and specific requirements like (sound-like, concept behind name or easy-writing), the application would show a list of results to users. 
@@ -46,7 +46,7 @@ Proposal:
 	4. edit candidates
 	5. Select preferred one
 	6. Fill in detailed information
-	7. Generate busnesscard, which can save to picture
+	7. Generate businesscard, which can save to picture
 	8. See how to write each word
 	9. Use slider to choose the speed gif runs
 	10. Go back to choose another combination
@@ -56,7 +56,7 @@ Update from project 2:
 	2. After user generate their business card, they can see how to write each word
 	3. Implement an online database for those animations
 	4. A database of gif for all words is uploaded to Github by hand, since no api available
-	4. The gif is downloaded each time the view is loaded or slider moves
+	5. The gif is downloaded each time the view is loaded or slider moves
 
 Honor Pledge:
 	I affirm that I have not given or received any unauthorized help on this assignment, and that this work is my own.

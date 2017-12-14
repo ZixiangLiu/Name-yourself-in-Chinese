@@ -91,5 +91,6 @@ class FifthViewController: UIViewController{
         let Myunicode = String(unicodeScalars[unicodeScalars.startIndex].value, radix: 16, uppercase: true)
         let url = "https://raw.githubusercontent.com/ZixiangLiu/Name-yourself-in-Chinese/master/GIF/\(Myunicode).gif"
         self.transferObj.url = url
+        self.transferObj.strObj = button.title(for: .normal)!
     }
 }

@@ -55,6 +55,7 @@
 		09EAD4581FCE691B004E5B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09F878E21FE1C553004AFC89 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		09F878E41FE1C589004AFC89 /* ImageBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBrowserViewController.swift; sourceTree = "<group>"; };
+		09F878E91FE2338C004AFC89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		68A9F4E11FB67B650070F534 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		68E809AB1FCB83A4005DD62B /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		68E809AD1FCB99DE005DD62B /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +343,7 @@
 			children = (
 				FA4A31001FB0E74D00EBE399 /* Base */,
 				09EAD4501FCE65B3004E5B6F /* zh-Hant */,
+				09F878E91FE2338C004AFC89 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

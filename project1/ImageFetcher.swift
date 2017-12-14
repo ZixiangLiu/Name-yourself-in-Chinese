@@ -20,7 +20,7 @@ enum ImageFetchResult {
 class ImageFetcher {
     let session = URLSession(configuration: URLSessionConfiguration.default)
     
-    func fetchImage(url: String, completion: @escaping (ImageFetchResult) -> Void) {
+    func fetchImage(duration : Double, url: String, completion: @escaping (ImageFetchResult) -> Void) {
         if let imageURL = URL(string: url) {
             let request = URLRequest(url: imageURL)
             
@@ -28,7 +28,7 @@ class ImageFetcher {
                 (data, response, error) -> Void in
                 
                 guard let imageData = data,
-                    let image = UIImage.init(data: imageData) else {
+                    let _ = UIImage.init(data: imageData) else {
                         if data == nil {
                             completion(.ImageFailure(error!))
                         }
@@ -53,7 +53,7 @@ class ImageFetcher {
                     }
                 }
                 
-                if let gifimage = UIImage.animatedImage(with: images, duration:4) {
+                if let gifimage = UIImage.animatedImage(with: images, duration: duration) {
                     completion(.ImageSuccess(gifimage))
                 } else{
                     print("Nil GIF")
