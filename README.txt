@@ -21,16 +21,23 @@ Proposal:
 		1. loading
 		2. Input page (ask for gender, last name, first name, writability and so on)
 		3. Output text (A list of generated names and their meanings)
+		4. Additional input page to gather information to generate business card
+		5. Generate both Chinese and English version business card
+		6. Show how to write the Chinese words
 
 	UI:
 	Loading view: just include a static string
 	Input view: Combination of segment controller, label, text field
 	Output view: Table view 
+	Business card: Be able to save as images
+	Word animation: GIF to show how to write each word
 
 	Database:
-	A database includes:
+	A local database includes:
 		Commonly used Chinese characters:
 		easiness of writing, meaning
+	An online database includes:
+		Animation of each word in GIF format
 
 	User experience:
 	1. Open the app
@@ -40,20 +47,15 @@ Proposal:
 	5. Select preferred one
 	6. Fill in detailed information
 	7. Generate busnisscard, which can save to picture
-	8. Go back to choose another combination
+	8. See how to write each word
+	9. Go back to choose another combination
 
-Update from project1:
-	1. Add pronunciation for all Chinese first names and last names.
-	2. Add brief meaning for all Chinese first names
-	3. Add business card function; After select a name, user can now fill in required information and generate business card
-	4. Business card can be stored into camera roll.
-	5. Use stack view for the questionaire interface
-	6. Save information in first view entered by the user across app restarts
-	7. Add photo and camera function in tab bar controller
+Update from project 2:
+	1. The image view now can show GIF animation
+	2. After user generate their business card, they can see how to write each word
+	3. Implement an online database for those animations.
 
 
 
 Honor Pledge:
 	I affirm that I have not given or received any unauthorized help on this assignment, and that this work is my own.
-
-
