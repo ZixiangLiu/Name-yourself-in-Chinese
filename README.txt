@@ -1,5 +1,5 @@
 CSC214
-Project2
+Project3
 Team Member: Junyang Chen, Yifei Yang, Zixiang Liu, Yukun Chen
 App Name: Name Yourself in Chinese
 
@@ -46,16 +46,17 @@ Proposal:
 	4. edit candidates
 	5. Select preferred one
 	6. Fill in detailed information
-	7. Generate busnisscard, which can save to picture
+	7. Generate busnesscard, which can save to picture
 	8. See how to write each word
-	9. Go back to choose another combination
+	9. Use slider to choose the speed gif runs
+	10. Go back to choose another combination
 
 Update from project 2:
 	1. The image view now can show GIF animation
 	2. After user generate their business card, they can see how to write each word
-	3. Implement an online database for those animations.
-
-
+	3. Implement an online database for those animations
+	4. A database of gif for all words is uploaded to Github by hand, since no api available
+	4. The gif is downloaded each time the view is loaded or slider moves
 
 Honor Pledge:
 	I affirm that I have not given or received any unauthorized help on this assignment, and that this work is my own.
